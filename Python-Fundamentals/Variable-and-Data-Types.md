@@ -308,3 +308,6 @@ Output:
 ```text
 <class 'bytes'>
 ```
+
+
+Note: Notes are based on my learning and hands-on practice. Formatting and organization were assisted by AI.
