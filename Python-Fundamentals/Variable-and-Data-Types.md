@@ -1,122 +1,310 @@
-- VARIABLES AND DATA TYPES
-    
-    1. Variable = A variable is a container that stores data
-    Ex = name = "Sumit" , age = 20
-    name stores "Sumit"  , age stores 20
-    
-    
-    # Syntax = variable_name=value
-    
-    2.Data Types = A data type tells what kind of data a variable stores.**
-    
-    2.1. String (`str`) = Stores text or words. Ex - { name = "Sumit” , city = "Patna” }
-    2.2. Integer (`int`) = Stores whole numbers. Ex -  { age = 20 , marks = 95 }
-    2.3. Float (`float`) = Stores decimal numbers. Ex - { price = 99.99 , pi = 3.14 }
-    2.4. Boolean (`bool`) = Stores only `True` or `False`. Ex - { is_admin = True , is_logged_in = False }
-    2.5. Tuple (`tuple`) = Stores multiple values in a fixed collection.
-        - Ordered
-        - Cannot be changed after creation
-        - Ex = numbers = (1, 2, 3)
-    2.6. List (`list`) = Stores multiple values in one variable.
-        - Ordered
-        - Can be changed
-        - Ex = fruits = ["apple", "banana", "mango"]
-    2.7. Dictionary (`dict`) = Stores data in key-value pairs.
-        
-        user = {
-            "name": "Sumit",
-            "age": 20
-        }
-        
-    2.8. Set (`set`) = Stores unique values only.
-        - Duplicate values are automatically removed.
-        - Ex = numbers = {1, 2, 3, 3, 3} , Output : {1, 2, 3}
+# Variables and Data Types
 
+## 1. Variables
 
+A variable is a container that stores data.
 
-- CODE SNIPPET
+### Example
+
 ```python
-name = "sumit".            -- varialabe
+name = "Sumit"
+age = 20
+```
+
+- `name` stores `"Sumit"`
+- `age` stores `20`
+
+### Syntax
+
+```python
+variable_name = value
+```
+
+---
+
+## 2. Data Types
+
+A data type defines what kind of data a variable stores.
+
+| Type | Example |
+|--------|--------|
+| `str` | `"Sumit"` |
+| `int` | `20` |
+| `float` | `99.99` |
+| `bool` | `True` |
+| `list` | `["apple", "banana"]` |
+| `tuple` | `(1, 2, 3)` |
+| `dict` | `{"name": "Sumit"}` |
+| `set` | `{1, 2, 3}` |
+
+### String (`str`)
+
+Stores text.
+
+```python
+name = "Sumit"
+```
+
+### Integer (`int`)
+
+Stores whole numbers.
+
+```python
+age = 20
+```
+
+### Float (`float`)
+
+Stores decimal values.
+
+```python
+price = 99.99
+```
+
+### Boolean (`bool`)
+
+Stores only `True` or `False`.
+
+```python
+is_admin = False
+```
+
+### Tuple (`tuple`)
+
+- Ordered
+- Immutable
+
+```python
+numbers = (1, 2, 3)
+```
+
+### List (`list`)
+
+- Ordered
+- Mutable
+
+```python
+fruits = ["apple", "banana", "mango"]
+```
+
+### Dictionary (`dict`)
+
+Stores data as key-value pairs.
+
+```python
+user = {
+    "name": "Sumit",
+    "age": 20
+}
+```
+
+### Set (`set`)
+
+Stores unique values.
+
+```python
+numbers = {1, 2, 3, 3, 3}
+```
+
+Output:
+
+```python
+{1, 2, 3}
+```
+
+---
+
+# Practical Examples
+
+## Variable
+
+```python
+name = "sumit"
 print(name)
+```
+
+Output:
+
+```text
 sumit
 ```
 
+---
+
+## Multiple Assignment
+
 ```python
-name, age = "sumit", 19.   -- multiple assginment
+name, age = "sumit", 19
+```
 
-print(type(name))          -- identify variable types
+```python
+print(type(name))
+print(type(age))
+```
+
+Output:
+
+```text
 <class 'str'>
-
-print(type(age))           -- identify variable types
 <class 'int'>
 ```
+
+---
+
+## Type Conversion
 
 ```python
 age = "19"
-print(type(age))          -- string
-<class 'str'>            
+print(type(age))
+```
 
+Output:
+
+```text
+<class 'str'>
+```
+
+```python
 age = int("19")
-print(type(age))          -- integer
+print(type(age))
+```
+
+Output:
+
+```text
 <class 'int'>
 ```
 
-```python
-year = 19                  -- 'y' case sensetive variable
-Year = "ninety"            -- 'Y' case sensetive variable
+---
 
-print(year); print(Year)
-19
-ninety             -- two diffrent vairables
+## Case Sensitivity
+
+```python
+year = 19
+Year = "ninety"
 ```
 
 ```python
-list_data_type = ["one", "two", "three"]      -- SQUARE BRACKER []
-print(list_data_type)
-['one', 'two', 'three']
+print(year)
+print(Year)
+```
 
-A, B, C = list_data_type                      -- unpack
+Output:
 
-print(A); print(B); print(C)
+```text
+19
+ninety
+```
+
+Python treats `year` and `Year` as different variables.
+
+---
+
+## List Unpacking
+
+```python
+list_data_type = ["one", "two", "three"]
+```
+
+```python
+A, B, C = list_data_type
+```
+
+```python
+print(A)
+print(B)
+print(C)
+```
+
+Output:
+
+```text
 one
 two
 three
-
-print(list_data_type)
-['one', 'two', 'three']
 ```
 
+---
+
+## Tuple
+
 ```python
-tuple_data_type = ("your", "mine").       -- PARENTHESES BRACKER ()
+tuple_data_type = ("your", "mine")
 print(type(tuple_data_type))
+```
+
+Output:
+
+```text
 <class 'tuple'>
 ```
 
-```python
-dictionary_data_type = {"ctf": 5, "lab": 20}
-print(type(dictionary_data_type))            -- CURLY BRACKER {}
-<class 'dict'>                             -- WITH VALUES,EX- 5,20
-```
+---
+
+## Dictionary
 
 ```python
-boolean_data_type = False         -- two type only = True, False
+dictionary_data_type = {"ctf": 5, "lab": 20}
+print(type(dictionary_data_type))
+```
+
+Output:
+
+```text
+<class 'dict'>
+```
+
+---
+
+## Boolean
+
+```python
+boolean_data_type = False
 print(type(boolean_data_type))
+```
+
+Output:
+
+```text
 <class 'bool'>
 ```
 
+---
+
+## Range
+
 ```python
-range_data_type = range(9)        -- range(range-number)
-
+range_data_type = range(9)
 print(range_data_type)
-range(0, 9)
+```
 
-print(type(range_data_type))
-<class 'range'>
+Output:
+
+```text
+range(0, 9)
 ```
 
 ```python
-byte_data_type = b"best"         
-print(type(byte_data_type))
-<class 'bytes'>
+print(type(range_data_type))
+```
 
+Output:
+
+```text
+<class 'range'>
+```
+
+---
+
+## Bytes
+
+```python
+byte_data_type = b"best"
+print(type(byte_data_type))
+```
+
+Output:
+
+```text
+<class 'bytes'>
 ```
