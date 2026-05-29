@@ -1,4 +1,3 @@
-
 VARIABLES AND DATA TYPES
         
         #### 1. Variable = A variable is a container that stores data
@@ -47,7 +46,9 @@ VARIABLES AND DATA TYPES
             sumit
             ```
             
-            ```python
+Code snippet
+
+            ``python
             name, age = "sumit", 19.   -- multiple assginment
             
             print(type(name))          -- identify variable types
@@ -55,9 +56,9 @@ VARIABLES AND DATA TYPES
             
             print(type(age))           -- identify variable types
             <class 'int'>
-            ```
+            ``
             
-            ```python
+            ``python
             age = "19"
             print(type(age))          -- string
             <class 'str'>            
@@ -65,18 +66,18 @@ VARIABLES AND DATA TYPES
             age = int("19")
             print(type(age))          -- integer
             <class 'int'>
-            ```
+            ``
             
-            ```python
+            ``python
             year = 19                  -- 'y' case sensetive variable
             Year = "ninety"            -- 'Y' case sensetive variable
             
             print(year); print(Year)
             19
             ninety             -- two diffrent vairables
-            ```
+            ``
             
-            ```python
+            ``python
             list_data_type = ["one", "two", "three"]      -- SQUARE BRACKER []
             print(list_data_type)
             ['one', 'two', 'three']
@@ -90,27 +91,27 @@ VARIABLES AND DATA TYPES
             
             print(list_data_type)
             ['one', 'two', 'three']
-            ```
+            ``
             
-            ```python
+            ``python
             tuple_data_type = ("your", "mine").       -- PARENTHESES BRACKER ()
             print(type(tuple_data_type))
             <class 'tuple'>
-            ```
+            ``
             
-            ```python
+            ``python
             dictionary_data_type = {"ctf": 5, "lab": 20}
             print(type(dictionary_data_type))            -- CURLY BRACKER {}
             <class 'dict'>                             -- WITH VALUES,EX- 5,20
-            ```
+            ``
             
-            ```python
+            ``python
             boolean_data_type = False         -- two type only = True, False
             print(type(boolean_data_type))
             <class 'bool'>
-            ```
+            ``
             
-            ```python
+            ``python
             range_data_type = range(9)        -- range(range-number)
             
             print(range_data_type)
@@ -118,11 +119,11 @@ VARIABLES AND DATA TYPES
             
             print(type(range_data_type))
             <class 'range'>
-            ```
+            ``
             
-            ```python
+            ``python
             byte_data_type = b"best"         
             print(type(byte_data_type))
             <class 'bytes'>
             
-            ```
+            ``
