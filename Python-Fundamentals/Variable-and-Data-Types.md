@@ -125,23 +125,4 @@
             print(type(byte_data_type))
             <class 'bytes'>
             
-            ```            print(type(boolean_data_type))
-            <class 'bool'>
-            ```
-            
-            ```python
-            range_data_type = range(9)        -- range(range-number)
-            
-            print(range_data_type)
-            range(0, 9)
-            
-            print(type(range_data_type))
-            <class 'range'>
-            ```
-            
-            ```python
-            byte_data_type = b"best"         
-            print(type(byte_data_type))
-            <class 'bytes'>
-            
             ```
