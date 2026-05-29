@@ -1,6 +1,5 @@
-VARIABLES AND DATA TYPES
-        
-        #### 1. Variable = A variable is a container that stores data
+VARIABLES AND DATA TYPES        
+   #### 1. Variable = A variable is a container that stores data
         
         ```
         name = "Sumit"
