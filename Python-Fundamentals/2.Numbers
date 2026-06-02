@@ -1,0 +1,92 @@
+# Numbers
+1. Integer and Float
+
+```jsx
+int_1 = 1                            -- integer 1
+float_1 = 1.1                        -- float 1.1
+
+print(int_1); print(float_1)
+1
+1.1
+```
+
+1. Hex — `0xa`  - represent 8 binary
+    
+    It starts with `0x`. `0xa` means `10` in decimal. This is very important for security — memory addresses, shellcode, color codes, everything is in hex. `0xFF`, `0x41` — all of this is hex.
+    
+    ```jsx
+    hex_1 = 0xa
+    
+    print(hex_1)
+    10
+    
+    print(type(hex_1))
+    <class 'int'>
+    ```
+    
+2. **Octal — `0o10`** - represent 16 binary
+    
+    It starts with `0o`. `0o10` means `8` in decimal. It is used in Linux file permissions — remember `chmod 755`? That is octal. Knowing this much is enough.
+    
+    ```jsx
+    octal_1 = 0o10
+    
+    print (octal_1)
+    8
+    
+    print(type(octal_1))
+    <class 'int'>
+    ```
+    
+    ```jsx
+    print(1 + 0x1 + 0o1)         -- (whole number + hex + octal)
+    3
+    ```
+    
+
+1. Complex
+
+```jsx
+complex_1 = 1.54442j                -- complex = number+imaginary number
+
+print(complex_1); print(type(complex_1))
+1.54442j
+<class 'complex'>
+```
+
+```jsx
+# 'abs'Make any negetive number into positive number.Ex= -1 = 1, -2 = 2
+
+print(abs(4)); print(abs(-4))
+4
+4
+
+# 'round' find nearest number. Ex= 8.4 = 8 , 8.6 = 9
+
+In [14]: print(round(8.4)); print(round(8.5)); print(round(8.6))
+8
+8
+9
+
+# 'bin' shows binary number of number , support only numbers
+
+print(bin(1)); print(bin(2))
+0b1
+0b10
+
+# 'ord' shows numeric values of any letter, Ex = a = 97
+
+print(ord('a'))
+97
+
+print(bin(97))
+0b1100001
+
+# 'hex' shows hex value , Ex= 98 = 0x62
+
+print(ord('b'))
+98
+
+print(hex(98))
+0x62
+```
