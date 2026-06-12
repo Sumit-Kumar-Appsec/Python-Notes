@@ -1,0 +1,80 @@
+- TUPLES CAN STORE MULTIPLE ITEM IN A SINGLE VERIABLE, AND LIKE STRING THESE ARE IMMUTABLE AND CANT BE CHANGE
+
+```python
+items = ("item1", "item2", "item3", "item4", "item5")
+print(items)
+print(type(items))         -- strings in tuple
+
+('item1', 'item2', 'item3', 'item4', 'item5')
+<class 'tuple'>
+```
+
+```python
+items_number = (1, 2, 3, 4, 5)   -- numbers in tuple
+print(items_number)
+print(type(items_number))
+
+(1, 2, 3, 4, 5)
+<class 'tuple'>
+```
+
+```python
+repeat = ("hello",) * 5      -- multiply
+print(repeat)
+print(type(repeat))
+
+('hello', 'hello', 'hello', 'hello', 'hello')
+<class 'tuple'>
+```
+
+```python
+mixed_items = (1, "hello", 3.14, True)   -- mixed variables
+print(mixed_items)
+print(type(mixed_items))
+
+(1, 'hello', 3.14, True)
+<class 'tuple'>
+```
+
+```python
+combined = items + items_number         -- combining two tuple
+print(combined)
+print(type(combined))
+
+('item1', 'item2', 'item3', 'item4', 'item5', 1, 2, 3, 4, 5)
+<class 'tuple'>
+```
+
+```python
+items = ("item1", "item2", "item3", "item4", "item5")  
+string_1, string_2, string_3, string_4, string_5 = items
+print(string_1)
+print(string_2)
+print(string_3)
+print(string_4)
+print(string_5)
+
+item1
+item2                                -- unpack tuple
+item3
+item4
+item5
+```
+
+```python
+items = ("item1", "item2", "item3", "item4", "item5")      -- using in
+print("items" in items)
+False
+
+print("item1" in items)
+True
+
+print("item6" in items)
+False
+
+print("item1" not in items)
+False
+
+print("item6" not in items)
+True
+```
