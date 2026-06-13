@@ -6,3 +6,4 @@
 - [Numbers](Python-Fundamentals/2.Numbers.md)
 - [String Formatting](Python-Fundamentals/3.String-Formatting.md)
 - [Boolean & Operators](Python-Fundamentals/4.Boolean-&-Operators.md)
+- [Tuple](Python-Fundamentals/5.Tuple.md)
