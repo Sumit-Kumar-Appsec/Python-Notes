@@ -4,3 +4,4 @@
 - [Numbers](./2.Numbers.md)
 - [String Formatting](./3.String-Formatting.md)
 - [Boolean & Operators](./4.Boolean-&-Operators.md)
+- [Tuple](./5.Tuple.md)
